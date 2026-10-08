@@ -46,3 +46,9 @@ out/
 _site/
 *.css
 !petclinic.css
+
+### MVN ###
+mvn-run.log
+
+### DOCS ###
+/docs
