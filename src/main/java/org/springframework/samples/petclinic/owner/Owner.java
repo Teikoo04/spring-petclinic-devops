@@ -111,13 +111,7 @@ public class Owner extends Person {
 		}
 		getPets().add(pet);
 	}
-
-	/** 
-	public void updatePet(Pet pet) {
-		if (pet == null) {
-			return;
-		}
-	}*/
+	
 
 	/**
 	 * Return the Pet with the given name, or null if none found for this Owner.
