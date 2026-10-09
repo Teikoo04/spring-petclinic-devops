@@ -98,28 +98,28 @@ public class Owner extends Person {
 	}
 
 	public void addPet(Pet pet) {
-        if (pet == null) {
-            return;
-        }
-        if (getPets().contains(pet)) {
-            return;
-        }
-        for (Pet existingPet : getPets()) {
-            if (!existingPet.isNew() && !pet.isNew() && Objects.equals(existingPet.getId(), pet.getId())) {
-                return;
-            }
-        }
-        getPets().add(pet);
-    }
+		if (pet == null) {
+			return;
+		}
+		if (getPets().contains(pet)) {
+			return;
+		}
+		for (Pet existingPet : getPets()) {
+			if (!existingPet.isNew() && !pet.isNew() && Objects.equals(existingPet.getId(), pet.getId())) {
+				return;
+			}
+		}
+		getPets().add(pet);
+	}
 
-    /**
-     * Return the Pet with the given name, or null if none found for this Owner.
-     * @param name to test
-     * @return the Pet with the given name, or null if no such Pet exists for this Owner
-     */
-    public Pet getPet(String name) {
-        return getPet(name, false);
-    }
+	/**
+	 * Return the Pet with the given name, or null if none found for this Owner.
+	 * @param name to test
+	 * @return the Pet with the given name, or null if no such Pet exists for this Owner
+	 */
+	public Pet getPet(String name) {
+		return getPet(name, false);
+	}
 
 	/**
 	 * Return the Pet with the given id, or null if none found for this Owner.
